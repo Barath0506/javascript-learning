@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="black" text="white">
+    <style>
+        p{
+            color:white;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+  <p> 
+    operators 
+    <br>
+Arithmetic operators: + - *  ** / % ++ -- <br>
+Assignment operators: += -= *= /= %= **=<br>
+comparison operators: == === != !== < > >= <= <br>
+logical operators: && || ! <br>
+bitwise operators: & | ~ ^ << >> >>> <br>
+</p> 
+ 
+</body>
+</html>
+<script >
+    document.write("LOGICAL OPERATOR-->&&  ||  !"); 
+    document.write("<br>");
+    var a=100;
+    document.write("(a>50 && a%10==0) -->"); 
+    document.write(a>50 && a%10==0);
+    document.write("<br>");
+    document.write("(a>50 || a%33==0) -->"); 
+    document.write(a>50 || a%33==0);
+    document.write("<br>");
+    var num=5;
+    if(num!=3){
+        document.write("not same");
+    }document.write("<br>");
+    document.write("BITWISE OPERATOR--> & | ~ ^ << >> >>>");
+    document.write("<br>");
+    document.write("( 4&5 ) -->");  
+    document.write(4&5 ); document.write("<br>");
+    document.write("( 4|5 ) -->"); 
+    document.write(4|5); document.write("<br>");
+    document.write("( ~5 ) -->"); 
+    document.write(~5); document.write("<br>");
+    document.write("( 4^5 ) -->"); 
+    document.write(4^5); document.write("<br>");
+</script>
+<!-- arithmetic operators
+
+Addition (+): Used to add numbers together or concatenate strings.
+let sum = 5 + 3; // sum is 8
+let fullName = "John" + " " + "Doe"; // fullName is "John Doe"
+
+Subtraction (-): Used to subtract one number from another.
+let difference = 10 - 5; // difference is 5
+
+Multiplication (*): Used to multiply numbers.
+let product = 4 * 3; // product is 12
+
+Division (/): Used to divide one number by another.
+let quotient = 20 / 5; // quotient is 4
+
+Remainder (%): Used to find the remainder after dividing one number by another.
+let remainder = 10 % 3; // remainder is 1
+
+Exponentiation ()**: Used to raise the left operand to the power of the right operand.
+let result = 2 ** 3; // result is 8 (2 raised to the power of 3) -->
+
+<!-- ASSIGNMENT OPERATORS
+
+Assignment Operator (=): This is the most basic assignment operator, used to assign a value to a variable.
+let x = 5;
+
+Addition Assignment (+=): Adds the value on the right to the variable on the left and assigns the result to the variable.
+let x = 5;
+x += 3; // equivalent to x = x + 3
+
+Subtraction Assignment (-=): Subtracts the value on the right from the variable on the left and assigns the result to the variable.
+let x = 5;
+x -= 2; // equivalent to x = x - 2
+
+Multiplication Assignment (*=): Multiplies the variable on the left by the value on the right and assigns the result to the variable.
+let x = 5;
+x *= 4; // equivalent to x = x * 4
+
+Division Assignment (/=): Divides the variable on the left by the value on the right and assigns the result to the variable.
+let x = 10;
+x /= 2; // equivalent to x = x / 2
+
+Modulus Assignment (%=): Divides the variable on the left by the value on the right and assigns the remainder to the variable.
+let x = 10;
+x %= 3; // equivalent to x = x % 3, result would be 1
+
+Exponentiation Assignment (**=): Raises the variable on the left to the power of the value on the right and assigns the result to the variable.
+let x = 2;
+x **= 3; // equivalent to x = x ** 3, result would be 8
+
+Bitwise AND Assignment (&=): Performs a bitwise AND operation between the variable on the left and the value on the right, and assigns the result to the variable.
+let x = 5; // 101 in binary
+x &= 3;   // 011 in binary, result would be 1
+
+Bitwise OR Assignment (|=): Performs a bitwise OR operation between the variable on the left and the value on the right, and assigns the result to the variable.
+let x = 5; // 101 in binary
+x |= 3;   // 111 in binary, result would be 7
+
+Bitwise XOR Assignment (^=): Performs a bitwise XOR operation between the variable on the left and the value on the right, and assigns the result to the variable.
+let x = 5; // 101 in binary
+x ^= 3;   // 110 in binary, result would be 6 -->
+
+<!-- COMPARISON OPERATORS
+
+Equal (==): Checks if two values are equal, but it does type coercion, meaning it tries to convert the values to the same type before making the comparison.
+5 == "5";  // true, because "5" is converted to 5 before comparison
+
+Strict Equal (===): Checks if two values are equal, without type coercion. Both the value and the type must be the same.
+5 === "5";  // false, because the types are different
+
+Not Equal (!=): Checks if two values are not equal, with type coercion.
+5 != "6";  // true, because the values are not equal
+
+Strict Not Equal (!==): Checks if two values are not equal, without type coercion.
+5 !== "5";  // true, because the types are different
+
+Greater Than (>): Checks if the left operand is greater than the right operand.
+10 > 5;  // true
+
+Greater Than or Equal (>=): Checks if the left operand is greater than or equal to the right operand.
+10 >= 10;  // true
+
+Less Than (<): Checks if the left operand is less than the right operand.
+5 < 10;  // true
+
+Less Than or Equal (<=): Checks if the left operand is less than or equal to the right operand.
+5 <= 5;  // true -->
+
+
+<!-- LOGICAL OPERATORS
+
+Logical AND (&&):
+The && operator returns true if both operands are true; otherwise, it returns false.
+Commonly used for combining conditions where all conditions must be true.
+let x = 5;
+let y = 10;
+if (x > 0 && y > 0) {
+    console.log("Both x and y are positive");
+}
+
+
+Logical OR (||):
+The || operator returns true if at least one of the operands is true; otherwise, it returns false.
+Useful for situations where any of multiple conditions can be true.
+let x = 5;
+let y = -5;
+if (x > 0 || y > 0) {
+    console.log("At least one of x or y is positive");
+}
+
+
+Logical NOT (!):
+The ! operator negates the boolean value of its operand. If the operand is true, it returns false; if the operand is false, it returns true.
+Used to reverse the logical state of its operand.
+let x = 5;
+if (!(x === 0)) {
+    console.log("x is not equal to 0");
+} -->
+
+
+<!-- BITWISE OPERATORS
+
+Bitwise AND (&): It returns a one in each bit position for which the corresponding bits of both operands are ones.
+let result = 5 & 3; // Binary: 101 & 011 = 001
+console.log(result); // Output: 1
+
+
+Bitwise OR (|): It returns a one in each bit position for which the corresponding bits of either or both operands are ones.
+let result = 5 | 3; // Binary: 101 | 011 = 111
+console.log(result); // Output: 7
+
+
+Bitwise XOR (^): It returns a one in each bit position for which the corresponding bits of the operands are different.
+let result = 5 ^ 3; // Binary: 101 ^ 011 = 110
+console.log(result); // Output: 6
+
+
+Bitwise NOT (~): It inverts the bits of its operand.
+let result = ~5; // Binary: ~101 = 11111111111111111111111111111010
+console.log(result); // Output: -6 (due to two's complement representation)
+
+
+Left Shift (<<): It shifts the bits of its first operand to the left by the number of places specified in the second operand. It fills in zeros from the right.
+let result = 5 << 1; // Binary: 101 << 1 = 1010
+console.log(result); // Output: 10
+
+
+Sign-propagating Right Shift (>>) or Arithmetic Right Shift: It shifts the bits of its first operand to the right by the number of places specified in the second operand. It fills in the new bits with the value of the sign bit (the leftmost bit).
+let result = -10 >> 1; // Binary: -1010 >> 1 = -101
+console.log(result); // Output: -5
+
+
+Zero-fill Right Shift (>>>) or Logical Right Shift: It shifts the bits of its first operand to the right by the number of places specified in the second operand. It fills in the new bits with zeros.
+let result = -10 >>> 1; // Binary: -1010 >>> 1 = 0111
+console.log(result); // Output: 2147483643 -->
