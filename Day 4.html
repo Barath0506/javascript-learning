@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- strings  -->
+<h2>String Methods</h2>
+<h4>
+   1. charAt(index)<br>
+   2. concat(str1,str2)<br>
+   3. indexOf(substring)<br>
+   4. lastIndexOf(substring)<br>
+   5. substring(start,end)<br>
+   6. substr(start,length)<br>
+   7. toLowerCase()<br>
+   8. toUpperCase()<br>
+   9 replace(oldValue,newValue)<br>
+   10. trim()<br>
+   11. trimStart() <br>
+   12. trimEnd() <br>
+   13. split(seperator)<br>
+   14. stratwith(searchString,position)<br>
+   15. endsWith(searchString,length)<br>
+   16 includes(searchString,position)<br>
+   17. slice(start,end)<br>
+   18. charCodeAt(index)<br>
+   19. repeat(count)<br>
+   20. match(regexp)<br>
+   21. search(regexp)<br>
+   22. padStart(targetLength,padString)<br>
+   23. padEND(targetLength,padString)<br>
+</h4>
+
+<script>
+
+   // 1.charAt(index): Returns the character at the specified index.
+    const str = "Hello";
+    console.log(str.charAt(0)); // Output: H
+
+
+
+   // 2. concat(str1, str2, ...): Joins two or more strings.
+    const str1 = "Hello";
+    const str2 = "World";
+    console.log(str1.concat(" ", str2)); // Output: Hello World
+
+
+
+   /* 3.indexOf(substring): Returns the index within the calling string object of the first 
+   occurrence of the specified value, starting the search at fromIndex. */
+    const str5 = "Hello World";
+    console.log(str5.indexOf("o")); // Output: 4
+
+
+
+    /* 4.lastindexOf(substring): Returns the index within the calling string object of the last
+   occurrence of the specified value */
+   const str6 = "Hello World";
+   console.log(str6.lastIndexOf("o")); // Output: 7
+   
+</script>
+<script>
+    /* 5.substring(start, end): Returns a new string containing characters from the 
+    calling string from start index to end index (end index not included). */
+    const str7 = "Hello World";
+    console.log(str7.substring(0, 5)); // Output: Hello
+
+
+
+     /* 6.substr(start,length):  */
+    const str8 = "Hello World";
+    console.log(str8.substring(1, 7)); // Output: ello W
+
+
+
+   // 7.toLowerCase(): Converts the calling string to lowercase.
+        const str9 = "Hello World";
+        console.log(str9.toLowerCase()); // Output: hello world
+
+
+
+    // 8.toUpperCase(): Converts the calling string to uppercase.
+        const str10 = "Hello World";
+        console.log(str10.toUpperCase()); // Output: HELLO WORLD
+
+
+
+</script>
+<script>
+    
+    // 10.trim(): Removes whitespace from both ends of the string.
+        const str11 = "   Hello World,   ";
+        console.log(str11.trim()); // Output: 'Hello World,'
+
+
+
+        // 11.trimStart(): Removes whitespace from both ends of the string.
+        const str12 = "   Hello World,   "+"o";
+        console.log(str12.trimStart()); // Output: 'Hello World,   o'
+
+
+
+        // 12.trimEnd(): Removes whitespace from both ends of the string.
+        const str13 = "   Hello World,   ";
+        console.log(str13.trimEnd()); // Output: '  Hello World,'
+
+       
+</script>
+ </body>
+</html>
