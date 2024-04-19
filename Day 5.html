@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- strings  -->
+<h2>String Methods</h2>
+<h4>
+    1. charAt(index)<br>
+   2. concat(str1,str2)<br>
+   3. indexOf(substring)<br>
+   4. lastIndexOf(substring)<br>
+   5. substring(start,end)<br>
+   6. substr(start,length)<br>
+   7. toLowerCase()<br>
+   8. toUpperCase()<br>
+   9 replace(oldValue,newValue)<br>
+   10. trim()<br>
+   11. trimStart() <br>
+   12. trimEnd() <br>
+   13. split(seperator)<br>
+   14. stratwith(searchString,position)<br>
+   15. endsWith(searchString,length)<br>
+   16 includes(searchString,position)<br>
+   17. slice(start,end)<br>
+   18. charCodeAt(index)<br>
+   19. repeat(count)<br>
+   20. match(regexp)<br>
+   21. search(regexp)<br>
+   22. padStart(targetLength,padString)<br>
+   23. padEND(targetLength,padString)<br>
+</h4>
+<script>
+
+    //9 .replace(oldValue, newValue): Replaces a specified value with another value in a string.
+        const str2 = "Hello World";
+        console.log(str2.replace("World", "Universe")); // Output: Hello Universe
+
+
+    // 13.split(separator): Splits a string into an array of substrings based on the specified separator.
+        const str = "apple,banana,orange";
+        console.log(str.split(",")); // Output: ["apple", "banana", "orange"]
+
+
+    // 14.startsWith(searchString, position): Determines whether a string begins with the characters of a specified string, optionally starting the search at a given position.
+        const str1 = "Hello World";
+        console.log(str1.startsWith("Hello")); // Output: true
+
+</script>
+<script>
+
+    // 15.endsWith(searchString, length): Checks if a string ends with the characters of a specified string.
+        const str3 = "Hello World";
+        console.log(str3.endsWith("World")); // Output: true
+
+
+
+    // 16.includes(searchString, position): Checks if a string contains the specified substring.
+        const str4 = "Hello World";
+        console.log(str4.includes("World")); // Output: true
+
+
+
+    // 17.slice(start, end): Extracts a section of a string and returns it as a new string.
+        const str5 = "Hello World";
+        console.log(str5.slice(6)); // Output: World
+
+</script>
+<script>
+    // 18.charCodeAt(index): Returns the Unicode of the character at the specified index.
+        const str6 = "Hello";
+        console.log(str6.charCodeAt(0)); // Output: 72
+
+
+
+    // 19.repeat(count): Returns a new string with a specified number of copies of the string it was called on.
+        const str7 = "Hello";
+        console.log(str7.repeat(3)); // Output: HelloHelloHello
+
+
+    // 20.match(regexp): Searches a string for a match against a regular expression and returns the matches.
+        const str8 = "The rain in Spain falls mainly on the plain.";
+        console.log(str8.match(/ain/g)); // Output: ["ain", "ain", "ain"]
+
+</script>
+<script>
+
+    // 21.search(regexp): Searches a string for a specified value and returns the position of the match.
+        const str9 = "Hello World";
+        console.log(str9.search("World")); // Output: 6
+
+
+
+    // 22.padStart(targetLength, padString): Pads the current string with another string until the resulting string reaches the given length.
+        const str10 = "5";
+        console.log(str10.padStart(4, "0")); // Output: 0005
+
+
+
+    //23.padEnd(targetLength, padString): Pads the current string with another string until the resulting string reaches the given length.
+        const str11 = "5";
+        console.log(str11.padEnd(4, "0")); // Output: 5000
+</script>
+
+ </body>
+</html>
